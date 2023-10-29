@@ -16,7 +16,7 @@ class decorador:
     def __init__ (self , *valores,**diccionario):
         self.parametro = valores
         self.diccionarios = diccionario
-        
+        self.datos = 0
     
     def __call__(self, func) -> Any:
         
