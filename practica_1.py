@@ -9,7 +9,7 @@ class exception_custom (Exception):
         self.hora = valores[0][1]
     
     def mostrar_valores (self) -> str:
-        return (f"se produjo la exception de nombre {self.nombre} a la hora: {self.hora}")
+        return (f"se produjo la exception con nombre {self.nombre} a la hora: {self.hora}")
 
 class decorador:
     
@@ -24,7 +24,7 @@ class decorador:
         def wrapper (*args, **kwargs):
             print (*args)
             print (*kwargs)
-            print ("el nombre de la funcion :", func.__name__, "va ser decorada con  :", self.parametro)
+            print ("el nombre de la funcion  es :", func.__name__, "va ser decorada con  :", self.parametro)
             return func(*args, **kwargs) + self.parametro
         return wrapper
  
